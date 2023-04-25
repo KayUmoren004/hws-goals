@@ -44,7 +44,7 @@ const CourseFilter = ({ filters, handleChange, setFilters }) => {
   }, []);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative py-2" ref={dropdownRef}>
       <button
         className="bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         onClick={() => setIsOpen(!isOpen)}

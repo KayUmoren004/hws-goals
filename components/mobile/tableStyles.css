@@ -1,0 +1,73 @@
+/* tableStyles.css */
+.table-container {
+  overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+  table {
+    display: block;
+    white-space: nowrap;
+  }
+
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: inline-block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border-top: 1px solid #ccc;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Course";
+  }
+  td:nth-of-type(2):before {
+    content: "Title";
+  }
+  td:nth-of-type(3):before {
+    content: "Program";
+  }
+  td:nth-of-type(4):before {
+    content: "Quantitative Reasoning";
+  }
+  td:nth-of-type(5):before {
+    content: "Scientific Inquiry";
+  }
+  td:nth-of-type(6):before {
+    content: "Artistic Process";
+  }
+  td:nth-of-type(7):before {
+    content: "Social Inequality";
+  }
+  td:nth-of-type(8):before {
+    content: "Cultural Differences";
+  }
+  td:nth-of-type(9):before {
+    content: "Ethical Judgment";
+  }
+}
