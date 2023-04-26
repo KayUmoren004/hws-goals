@@ -84,12 +84,6 @@ export default function Home() {
     setFilteredData(newData);
   };
 
-  console.log({
-    data: data,
-    filteredData: filteredData,
-    filters: filters,
-  });
-
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
       columns,
